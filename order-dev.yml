@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: order
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/SpringCloud_Sell?characterEncoding=utf-8&useSSL=false
+    username: root
+    password: 123456
+  jpa:
+    show-sql: true
+  rabbitmq:
+    host: 47.106.157.169
+    port: 5672
+    username: guest
+    password: guest
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+env: dev111
